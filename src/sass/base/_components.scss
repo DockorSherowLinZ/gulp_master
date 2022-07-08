@@ -1,0 +1,112 @@
+//container
+.container {
+  @include w;
+  @include t;
+  @include m;
+}
+
+//----字體大小class-----
+//---特殊字
+.s1 {
+  font-family: $fontdeco;
+  font-size: round($s1);
+  line-height: round($font_size * 9.625);
+}
+
+//---標題
+.h1 {
+  font-family: $fontcontent;
+  font-size: round($font_size * 1.5);
+  line-height: round($font_size * 2.25);
+}
+
+.h2 {
+  font-family: $fontcontent;
+  font-size: round($font_size * 1.25);
+  line-height: round($font_size * 1.875);
+}
+
+.h3 {
+  font-family: $fontcontent;
+  font-size: round($font_size * 1.125);
+  line-height: round($font_size * 1.6875);
+}
+
+//---內文
+.p1 {
+  font-family: $fontcontent;
+  font-size: round($font_size * 1);
+  line-height: round($font_size * 1.75);
+}
+
+.p2 {
+  font-family: $fontcontent;
+  font-size: round($font_size * 0.875);
+  line-height: round($font_size * 1.3125);
+}
+
+.p3 {
+  font-family: $fontcontent;
+  font-size: round($font_size * 0.75);
+  line-height: round($font_size * 1.4);
+}
+
+//字體
+.fontdeco {
+  font-family: $fontdeco;
+}
+
+.fontcontent {
+  font-family: $fontcontent;
+}
+
+//字體的粗細--inter字體--
+.fw3 {
+  font-weight: 300;
+}
+
+//字體粗細--playfair字體--
+.fw4 {
+  font-weight: 400;
+}
+
+//斜體---
+.fi {
+  font-style: italic;
+}
+
+//--字體置中--
+.tc {
+  text-align: center;
+}
+
+//-----間距sapcing-----
+
+@for $i from 1 through 16 {
+  // margin
+  .ms_#{$i} {
+    margin-top: $i * 8px;
+  }
+  .me_#{$i} {
+    margin-bottom: $i * 8px;
+  }
+  .ml_#{$i} {
+    margin-left: $i * 8px;
+  }
+  .mr_#{$i} {
+    margin-right: $i * 8px;
+  }
+  //padding
+  .ps_#{$i} {
+    padding-top: $i * 8px;
+  }
+  .pe_#{$i} {
+    padding-bottom: $i * 8px;
+  }
+  .pl_#{$i} {
+    padding-left: $i * 8px;
+  }
+  .pr_#{$i} {
+    padding-right: $i * 8px;
+  }
+}

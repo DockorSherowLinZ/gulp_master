@@ -1,0 +1,36 @@
+{
+    "name": "gulp_cgd101",
+    "version": "1.0.0",
+    "description": "gulp project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "1.安裝套件": "npm install",
+        "2. 監看": "gulp w",
+        "3. 瀏覽器同步": "gulp",
+        "4.打包上線": "gulp package"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "jquery": "^3.6.0",
+        "vue": "^2.6.14"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.18.2",
+        "@babel/preset-env": "^7.18.2",
+        "browser-sync": "^2.27.10",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-clean": "^0.4.0",
+        "gulp-file-include": "^2.3.0",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "sass": "^1.51.0",
+        "webpack": "^4.43.0"
+    }
+}
